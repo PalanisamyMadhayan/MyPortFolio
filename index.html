@@ -32,7 +32,7 @@
                 <div
                   class="d-flex flex-row justify-content-between align-items-center"
                 >
-                  <h1 class="display-4">Palanisamy M</h1>
+                  <h1>Palanisamy M</h1>
                   <div class="d-none d-md-block">
                     <a href="http://twitter.com" class="text-white">
                       <i class="fab fa-twitter"></i
@@ -287,39 +287,39 @@
         <div class="card card-body py-5">
          <h3>Get In Touch</h3>
         
-         <form>
-           <div class="form-group">
+         <form name="contact" method="POST" data-netlify="true">
+          <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-danger text-white">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input type="text" name="name" class="form-control bg-dark text-white" placeholder="Name">
+          </div>
+         </div>
+         <div class="form-group">
            <div class="input-group input-group-lg">
              <div class="input-group-prepend">
                <span class="input-group-text bg-danger text-white">
-                 <i class="fas fa-user"></i>
+                 <i class="fas fa-envelope"></i>
                </span>
              </div>
-             <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+             <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Email">
            </div>
           </div>
           <div class="form-group">
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text bg-danger text-white">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-              <input type="email" class="form-control bg-dark text-white" placeholder="Email">
-            </div>
+           <div class="input-group input-group-lg">
+             <div class="input-group-prepend">
+               <span class="input-group-text bg-danger text-white">
+                 <i class="fas fa-pencil-alt"></i>
+               </span>
+             </div>
+             <textarea name="message" class="form-control bg-dark text-white" placeholder="Message"></textarea>
            </div>
-           <div class="form-group">
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text bg-danger text-white">
-                  <i class="fas fa-pencil-alt"></i>
-                </span>
-              </div>
-              <textarea class="form-control bg-dark text-white" placeholder="Message"></textarea>
-            </div>
-           </div>
-           <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
-         </form>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
+        </form>
         </div>
       </div>
     
